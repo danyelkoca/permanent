@@ -7,7 +7,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: dev ? '' : '/permanent'
+			base: dev ? '' : '/permanent',
 		},
 	}
 };
