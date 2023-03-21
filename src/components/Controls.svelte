@@ -3,13 +3,16 @@
 	import ChevronCircleLeft from 'svelte-icons/fa/FaChevronCircleLeft.svelte';
 	import { step, prev, next, questions } from '../stores';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
+
+	console.log(base)
 
 	function prev_setter(q) {
 		console.log(q);
 		prev.set($questions.filter((qu) => qu.step == q)[0].prev);
 		next.set($step);
 		step.set(q);
-		goto(`/form?q=${q}`);
+		goto(`${base}/form?q=${q}`);
 	}
 
 	function next_setter(q) {
@@ -18,7 +21,7 @@
 		prev.set($step);
 		next.set($questions.filter((qu) => qu.step == q)[0].next);
 		step.set(q);
-		goto(`/form?q=${q}`);
+		goto(`${base}/form?q=${q}`);
 	}
 </script>
 

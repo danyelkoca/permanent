@@ -9,6 +9,7 @@ import Question6 from './components/questions/6.svelte';
 import Question7 from './components/questions/7.svelte';
 import Question8 from './components/questions/8.svelte';
 
+
 let questions_ = [
 	{ step: '0', component: Question0, prev: '', next: '0-1' }, // welcome message
 	{ step: '0-1', component: Question1, prev: '0', next: '0-1-2' }, // how long have you been living in Japan? next is 0-1-2 because default option is less than 1 year
