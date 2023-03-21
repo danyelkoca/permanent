@@ -1,10 +1,11 @@
 <script>
 	import GiJapan from 'svelte-icons/gi/GiJapan.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <header>
 	<nav>
-		<a href="/" class="logo">
+		<a href="{base}/" class="logo">
 			<div class="logo-svg">
 				<GiJapan style="width:100%;" />
 			</div>
@@ -13,9 +14,9 @@
 	</nav>
 
 	<nav>
-		<a href="/">Home</a>
-		<a href="/form">Calculator</a>
-		<a href="/about">About</a>
+		<a href="{base}/">Home</a>
+		<a href="{base}/form">Calculator</a>
+		<a href="{base}/about">About</a>
 	</nav>
 </header>
 

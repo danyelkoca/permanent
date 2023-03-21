@@ -2,6 +2,7 @@
 	import '../styles/main.css';
 	import Navbar from '../components/Navbar.svelte';
 	import landing2 from '../images/landing2.jpg';
+	import { base } from '$app/paths';
 </script>
 
 <!-- <Navbar /> -->
@@ -20,7 +21,7 @@
 					Use our intuitive tool to see whether you are eligible for permanent residency in Japan
 					and what it takes to get it.
 				</p>
-				<a href="/form?q=0"> <button class="call-to-action">Try it now </button> </a>
+				<a href="{base}/form?q=0"> <button class="call-to-action">Try it now </button> </a>
 			</div>
 		</div>
 	</div>
