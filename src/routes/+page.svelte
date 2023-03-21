@@ -2,7 +2,6 @@
 	import '../styles/main.css';
 	import Navbar from '../components/Navbar.svelte';
 	import landing2 from '../images/landing2.jpg';
-	import { base } from '$app/paths';
 </script>
 
 <!-- <Navbar /> -->
@@ -15,13 +14,13 @@
 		<div class="img-container">
 			<div class="gradient" />
 			<img src={landing2} alt="lala" />
-			<div class="message-container">
+			<div class="message-container yolo">
 				<p class="main-message">Accelerate your Japan permanent residency journey.</p>
 				<p class="second-message">
 					Use our intuitive tool to see whether you are eligible for permanent residency in Japan
 					and what it takes to get it.
 				</p>
-				<a href="{base}/form?q=0"> <button class="call-to-action">Try it now </button> </a>
+				<a href="form?q=0"> <button class="call-to-action">Try it now </button> </a>
 			</div>
 		</div>
 	</div>
