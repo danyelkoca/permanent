@@ -3,7 +3,6 @@
 	import Navbar from '../components/Navbar.svelte';
 	import landing2 from '../images/landing2.jpg';
 	import { base } from '$app/paths';
-	export const trailingSlash = 'always';
 
 </script>
 
